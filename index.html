@@ -7,14 +7,17 @@
 	<body>
 		<h1>JavaScriptの勉強</h1>
 		<script>
-			// ループ（while）
+			// 関数（複数の処理をまとめられる）
 			
-			var i = 0;
-			while (i < 10)
-			{
-				console.log(i);
-				i++; //i = i + 1;
+			// aとbは「引数」
+			function sum(a, b) {
+				return (a + b);
 			}
+			
+			var result = sum(50, 33);
+			
+			alert(result);
+			
 		</script>
 	</body>
 </html>
