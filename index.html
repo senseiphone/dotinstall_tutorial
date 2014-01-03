@@ -6,19 +6,11 @@
 	</head>
 	<body>
 		<form action="survey.php" method="post">
-			<p>
-				Colors:
-				<label><input type="radio" name="color" value="red">Red</label>
-				<label><input type="radio" name="color" value="blue">Blue</label>
-				<label><input type="radio" name="color" value="green">Green</label>
-			</p>
-			<p>
-				Colors:
-				<label><input type="checkbox" name="color" value="red">Red</label>
-				<label><input type="checkbox" name="color" value="blue">Blue</label>
-				<label><input type="checkbox" name="color" value="green">Green</label>
-			</p>
-
+			<select name="color" size="5" multiple>
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+			</select>
 			<p><input type="submit" value="送信！"></p>
 		</form>
 	</body>
