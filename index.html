@@ -7,16 +7,17 @@
 	<body>
 		<h1>JavaScriptの勉強</h1>
 		<script>
-			// 関数（複数の処理をまとめられる）
+			// 関数
+			// ローカル変数
 			
-			// aとbは「引数」
-			function sum(a, b) {
-				return (a + b);
+			function getPrice(x) {
+				var rate = 0.82; // ローカル変数
+				return (x * rate);
 			}
 			
-			var result = sum(50, 33);
+			console.log(getPrice(83));
 			
-			alert(result);
+			//console.log(rate); // rateが参照できずエラーになる
 			
 		</script>
 	</body>
