@@ -5,13 +5,40 @@
 		<title>初めてのHTML</title>
 	</head>
 	<body>
-		<form action="survey.php" method="post">
-			<select name="color" size="5" multiple>
-				<option value="red">Red</option>
-				<option value="blue">Blue</option>
-				<option value="green">Green</option>
-			</select>
-			<p><input type="submit" value="送信！"></p>
-		</form>
+		<!--
+		スタイリング
+		div:		汎用ブロック要素（前後に改行が入る）
+		span:	汎用インライン要素（前後に改行が入らない）
+		
+		構造的
+		header
+		footer
+		nav
+		article
+		aside
+		section
+		-->
+		
+		<header>
+			<h1>起業日記</h1>
+			<nav>
+				home
+				profile
+			</nav>
+		</header>
+		
+		<article>
+			<h2>リリース完了</h2>
+			<p>うれしい！</p>
+		</article>
+		
+		<aside>
+			<h3>このサイトについて</h3>
+			<p>@senseiphoneの起業日記です。</p>
+		</aside>
+		
+		<footer>
+			copyright 2014 @senseiphone
+		</footer>
 	</body>
 </html>
