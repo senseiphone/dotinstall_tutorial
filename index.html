@@ -6,15 +6,15 @@
 	</head>
 	<body>
 		<h1>JavaScriptの勉強</h1>
+		<p>僕の名前は<span id="myName">@senseiphone</span>です！</p>
+		<p>価格：<input type="text" id="price">円</p>
 		<script>
-			// JavaScriptオブジェクト (Browser) - Browser Object Model (BOM)
-			// 文書（Document）- Document Object Model（DOM）
+			// DOM
+			var e = document.getElementById('myName');
+			e.innerHTML = '先生';
 			
-			// Gecko 6.0 より、document.width はサポートされなくなりました。
-			// 代わりに document.body.clientWidth を使用します。
-			console.log(document.body.clientWidth);
-						
-			document.body.bgColor = 'red';
+			var n = document.getElementById('price');
+			n.value = 500;
 			
 		</script>
 	</body>
