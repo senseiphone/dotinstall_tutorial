@@ -8,10 +8,13 @@
 		<h1>JavaScriptの勉強</h1>
 		<script>
 			// JavaScriptオブジェクト (Browser) - Browser Object Model (BOM)
+			// 文書（Document）- Document Object Model（DOM）
 			
-			console.log(window.innerHeight); // ウィンドウの内側の高さ
-			
-			// window.location.href = "http://google.com"; // Googleに移動する
+			// Gecko 6.0 より、document.width はサポートされなくなりました。
+			// 代わりに document.body.clientWidth を使用します。
+			console.log(document.body.clientWidth);
+						
+			document.body.bgColor = 'red';
 			
 		</script>
 	</body>
