@@ -6,14 +6,19 @@
 	</head>
 	<body>
 		<h1>JavaScriptの勉強</h1>
-		<p><input type="button" value="クリック！" id="myButton"></p>
 		<script>
-			// DOM - Event
+			// タイマー処理
+			// setTimeout: 一定時間後に何かする
+			setTimeout(function () {
+				console.log("2秒たちました！");
+			}, 2000);
 			
-			var e = document.getElementById('myButton');
-			e.onclick = function () {
-				alert("クリックされました！");
-			}
+			// setInterval: 一定周期ごとに何かする
+			var i = 0;
+			setInterval(function () {
+				console.log(i);
+				i++;
+			}, 1000);
 			
 		</script>
 	</body>
